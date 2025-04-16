@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "postinstall": "chmod +x node_modules/.bin/vite",
+    "vercel-build": "rm -rf node_modules && npm install --legacy-peer-deps && npm run build",
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
